@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Age Master</title>
+    <meta name="description"
+        content="Contact Age Master - Get in touch with our team for support, feedback, or inquiries.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agemaster.biz/contact.html">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0071e3;
+            --text-dark: #1d1d1f;
+            --text-muted: #86868b;
+            --bg-body: #fbfbfd;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            color: var(--text-dark);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .contact-card a {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #0071e3 0%, #00d2ff 100%);
+            color: white;
+            padding: 16px 48px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 113, 227, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Age Master</a>
+
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Whether you have a question, feedback, or need support, our team is here to help.
+        </p>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>📧 General Inquiries</h3>
+                <p>For general questions and information</p>
+                <a href="mailto:hello@agemaster.io">hello@agemaster.io</a>
+            </div>
+            <div class="contact-card">
+                <h3>🛠️ Technical Support</h3>
+                <p>Having issues? We're here to help</p>
+                <a href="mailto:support@agemaster.io">support@agemaster.io</a>
+            </div>
+            <div class="contact-card">
+                <h3>🔒 Privacy & Legal</h3>
+                <p>Privacy and legal matters</p>
+                <a href="mailto:legal@agemaster.io">legal@agemaster.io</a>
+            </div>
+            <div class="contact-card">
+                <h3>💼 Business & Partnerships</h3>
+                <p>Collaboration opportunities</p>
+                <a href="mailto:business@agemaster.io">business@agemaster.io</a>
+            </div>
+        </div>
+
+        <h2>Send Us a Message</h2>
+        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email *</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" required placeholder="How can we help you?">
+            </div>
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required
+                    placeholder="Tell us more about your inquiry..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <h2>Frequently Asked Questions</h2>
+        <p>Before reaching out, you might find answers to common questions in our <a href="index.html#faq">FAQ
+                section</a>.</p>
+
+        <h2>Response Time</h2>
+        <p>We typically respond to all inquiries within 24-48 hours during business days. For urgent technical issues,
+            please mark your email subject with [URGENT].</p>
+
+        <h2>Office Hours</h2>
+        <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM (EST)<br>
+            <strong>Saturday - Sunday:</strong> Closed
+        </p>
+
+        <p
+            style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #eee; color: var(--text-muted); font-size: 0.9rem;">
+            © 2026 Age Master Engineering. All rights reserved.
+        </p>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+
+            // In a real implementation, you would send this to a backend
+            // For now, we'll just show a success message
+            alert('Thank you for your message! We\'ll get back to you soon.\n\nNote: This is a demo form. In production, this would be connected to an email service.');
+
+            // Reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+
+</html>
